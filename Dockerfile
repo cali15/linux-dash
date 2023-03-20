@@ -10,6 +10,6 @@ COPY . .
 ARG BUILD_ARCH=amd64
 RUN apk add nodejs npm && npm install --production
 
-CMD [ "node", "./app/server/index.js" ]
+CMD [ "node", "app/server/index.js" ]
 
 EXPOSE 80
