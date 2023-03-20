@@ -8,7 +8,7 @@ COPY . .
 
 # Setup base
 ARG BUILD_ARCH=amd64
-RUN apk add nodejs npm
+RUN apk add nodejs npm && npm install --production
 
 CMD [ "node", "index.js" ]
 
